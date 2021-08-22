@@ -1,5 +1,5 @@
 {{ define "main" }}
-<img src="/images/rss.png" height="14px" width="14px"><a href="/index.xml">RSS Feed</a>
+<a href="/index.xml">RSS Feed</a>
   <article>{{ .Content }}</article>
   {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
   {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
